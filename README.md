@@ -1,33 +1,45 @@
-# 🎯 Moving Object Detection
+# Moving Object Detection
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?style=flat&logo=opencv)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-
-A computer vision project that detects and tracks moving objects in real-time using background subtraction and contour detection techniques.
+A Python project that detects moving objects using a webcam in real-time.
 
 ---
 
-## 📌 Features
+## What it does
 
-- Real-time moving object detection from webcam or video file
-- Background subtraction using MOG2 / KNN algorithms
-- Contour-based bounding box visualization
-- Frame differencing approach for motion highlight
-- Clean modular code structure
-
----
-
-## 🛠️ Tech Stack
-
-| Tool | Purpose |
-|------|---------|
-| Python 3.8+ | Core language |
-| OpenCV | Video processing & detection |
-| NumPy | Array operations |
-| Matplotlib | Visualization (optional) |
+- Opens your webcam
+- Captures the first frame as background
+- Detects any movement after that
+- Draws a green box around the moving object
+- Shows "Moving Object detected" or "Normal" on screen
+- Press `Q` to quit
 
 ---
 
-## 📁 Project Structure
+## Libraries Used
+
+- `opencv-python` — camera and image processing
+- `imutils` — resize frames easily
+- `time` — camera warm-up
+
+---
+
+## How to Install
+
+```bash
+pip install opencv-python imutils
+```
+
+---
+
+## How to Run
+
+```bash
+python moving_object_detection.py
+```
+
+---
+
+## Author
+
+**Shamsudeen Babu**  
+[GitHub](https://github.com/shamsudeen-babu)
